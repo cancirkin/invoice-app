@@ -1,0 +1,14 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
+#light {
+  background: $light-bg;
+  color: $text-color;
+}
+
+#dark {
+  background: $dark-bg;
+  color: #fff;
+}
