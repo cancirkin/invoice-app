@@ -1,3 +1,12 @@
+import Button from "../components/ui/Button";
+import iconPlus from "../assets/icons/icon-plus.svg";
+
 export default function Root() {
-  return <div>Due 19 Aug 2021</div>;
+  return (
+    <div>
+      <Button label="New Invoice">
+        <img src={iconPlus} width={10} height={10}></img>
+      </Button>
+    </div>
+  );
 }
