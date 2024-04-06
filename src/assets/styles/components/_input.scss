@@ -1,0 +1,11 @@
+.input {
+  width: 240px;
+  height: 48px;
+  border: 1px solid $input-border;
+  border-radius: 4px;
+  padding: 18px 20px;
+
+  &:focus {
+    outline-color: $primary-foreground-color;
+  }
+}
