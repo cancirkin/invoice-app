@@ -1,6 +1,7 @@
 import Button from "../components/ui/Button";
 import iconPlus from "../assets/icons/icon-plus.svg";
 import Input from "../components/form/Input";
+import Dropdown from "../components/form/Dropdown";
 
 export default function Root() {
   return (
@@ -9,7 +10,14 @@ export default function Root() {
         <img src={iconPlus} width={10} height={10}></img>
       </Button> */}
 
-      <Input />
+      {/* <Input /> */}
+
+      <Dropdown
+        options={[
+          { value: "12", label: "Test" },
+          { value: "13", label: "Test - 2" },
+        ]}
+      />
     </div>
   );
 }
