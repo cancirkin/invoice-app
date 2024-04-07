@@ -1,0 +1,53 @@
+.datepicker {
+  width: 240px;
+  height: 48px;
+  &__button {
+    width: 100%;
+    border: 1px solid $input-border;
+    border-radius: 4px;
+    padding: 11px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+      border: 1px solid $primary-foreground-color;
+    }
+  }
+
+  &__body {
+    background-color: $white;
+    margin-top: 24px;
+    border-radius: 8px;
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 26px 24px 32px 24px;
+
+      img {
+        cursor: pointer;
+      }
+    }
+
+    &__days {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      justify-items: center;
+      align-items: center;
+      padding: 0 19.5px 31px 19.5px;
+      gap: 10px;
+
+      &__day {
+        cursor: pointer;
+        &--today {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}

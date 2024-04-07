@@ -2,6 +2,7 @@ import Button from "../components/ui/Button";
 import iconPlus from "../assets/icons/icon-plus.svg";
 import Input from "../components/form/Input";
 import Dropdown from "../components/form/Dropdown";
+import DatePicker from "../components/form/DatePicker";
 
 export default function Root() {
   return (
@@ -12,12 +13,14 @@ export default function Root() {
 
       {/* <Input /> */}
 
-      <Dropdown
+      {/* <Dropdown
         options={[
           { value: "12", label: "Test" },
           { value: "13", label: "Test - 2" },
         ]}
-      />
+      /> */}
+
+      <DatePicker />
     </div>
   );
 }
