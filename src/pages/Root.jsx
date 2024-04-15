@@ -9,18 +9,17 @@ export default function Root() {
     <div>
       {/* <Button type="dark" label="New Invoice">
         <img src={iconPlus} width={10} height={10}></img>
-      </Button> */}
+      </Button>
 
-      {/* <Input /> */}
+      <Input />
 
-      {/* <Dropdown
+      <Dropdown
         options={[
           { value: "12", label: "Test" },
           { value: "13", label: "Test - 2" },
         ]}
       /> */}
-
-      <DatePicker />
+      {/* <DatePicker /> */}
     </div>
   );
 }
