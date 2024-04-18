@@ -15,7 +15,9 @@ export default function Layout() {
         <div className="App" id={theme}>
           <main>
             <Drawer />
-            <Outlet />
+            <div className="container">
+              <Outlet />
+            </div>
           </main>
         </div>
       </ThemeContext.Provider>

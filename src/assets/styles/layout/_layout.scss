@@ -12,3 +12,32 @@
   background: $dark-bg;
   color: #fff;
 }
+
+main {
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  max-width: 730px;
+  margin: 77px auto 0 auto;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  .container {
+    width: 100%;
+    max-width: 672px;
+    margin-top: 61px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 100%;
+    max-width: 327px;
+    margin-top: 32px;
+  }
+}

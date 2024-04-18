@@ -1,7 +1,7 @@
 .button {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 16px;
   width: auto;
   height: 48px;
   background-color: $primary-color;
@@ -40,7 +40,7 @@
 
 .button.light {
   background-color: #f9fafe;
-  color: $btn-light-text;
+  color: $light-text;
 
   &:hover {
     background-color: #dfe3fa;
@@ -49,7 +49,7 @@
 
 .button.dark {
   background-color: #373b53;
-  color: $btn-dark-text;
+  color: $dark-text;
 
   &:hover {
     background-color: $text-color;
@@ -58,4 +58,10 @@
 
 .button.block {
   width: 100%;
+}
+
+@media (max-width: 375px) {
+  .button {
+    gap: 8px;
+  }
 }
